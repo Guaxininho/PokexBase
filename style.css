@@ -25,8 +25,8 @@ html {
   width: 95%;
   margin: 0 auto;
   row-gap: 2rem;
-  -moz-column-gap: 1rem;
-       column-gap: 1rem;
+  -moz-column-gap: 0.1rem;
+       column-gap: 0.1rem;
 }
 #gridCards .card {
   padding: 1rem;
