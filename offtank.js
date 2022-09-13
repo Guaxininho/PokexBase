@@ -1,3 +1,6 @@
+// FUNDOS
+const fundoPlanta = "linear-gradient(to bottom, #c9fac6 0%,  #98fc91 100%), linear-gradient(to bottom, rgb(255, 188, 3) 0%, rgb(255, 187, 0) 100%)";
+const fundoLutador = "linear-gradient(to bottom, rgb(208, 147, 101) 0%, rgb(204, 130, 73) 100%), linear-gradient(to bottom, rgb(255, 188, 3) 0%, rgb(255, 187, 0) 100%)";
 
 
 
@@ -5,9 +8,11 @@
 const ListaDeOffTanks = [
 // PLANTA
 {
+  cardFundo: fundoPlanta,
   icone: "./img/grass.png",
   icone2: "",
   nome: "Gogoat",
+  cenario: "url(../img/fundoNature.png), linear-gradient(to bottom,  rgb(255, 205, 3) 0%, yellow 100%)",
   imagem: "./img/Gogoat.gif",
   elemento: "naturia",
   funcao: "offtank",
@@ -15,9 +20,11 @@ const ListaDeOffTanks = [
   tier: "2"
 },
 {
+  cardFundo: fundoPlanta,
   icone: "./img/grass.png",
   icone2: "",
   nome: "Sceptile",
+  cenario: "url(../img/fundoNature.png), linear-gradient(to bottom,  rgb(255, 205, 3) 0%, yellow 100%)",
   imagem: "./img/Sceptile.gif",
   elemento: "naturia",
   funcao: "offtank",
@@ -27,9 +34,11 @@ const ListaDeOffTanks = [
 
 // LUTADOR
 {
+  cardFundo: fundoLutador,
   icone: "./img/lutador.png",
   icone2: "",
   nome: "Elite Hitmontop",
+  cenario:"url(../img/fundoLutador.png), linear-gradient(to bottom,  rgb(255, 205, 3) 0%, yellow 100%)",
   imagem: "./img/Elitehitmontop.gif",
   elemento: "lutador",
   funcao: "offtank",
@@ -37,9 +46,11 @@ const ListaDeOffTanks = [
   tier: "2"
 },
 {
+  cardFundo: fundoLutador,
   icone: "./img/lutador.png",
   icone2: "",
   nome: "Mega Lopunny",
+  cenario:"url(../img/fundoLutador.png), linear-gradient(to bottom,  rgb(255, 205, 3) 0%, yellow 100%)",
   imagem: "./img/MegaLopunny.gif",
   elemento: "lutador",
   funcao: "offtank",
@@ -49,9 +60,11 @@ const ListaDeOffTanks = [
 
 // RAIBOLT
 {
+  cardFundo: "linear-gradient(to bottom, #f7e172 0%,  #e7d26d 100%), linear-gradient(to bottom, rgb(255, 188, 3) 0%, rgb(255, 187, 0) 100%)",
   icone: "./img/eletrico.png",
   icone2: "",
   nome: "Electabuzz",
+  cenario: "url(../img/fundoEletrico.png), linear-gradient(to bottom,  rgb(255, 205, 3) 0%, yellow 100%)",
   imagem: "./img/Electabuzz.gif",
   elemento: "elétrico",
   funcao: "offtank",
@@ -59,9 +72,11 @@ const ListaDeOffTanks = [
   tier: "2"
 },
 {
+  cardFundo: "linear-gradient(to bottom, #f7e172 0%,  #e7d26d 100%), linear-gradient(to bottom, rgb(255, 188, 3) 0%, rgb(255, 187, 0) 100%)",
   icone: "./img/eletrico.png",
   icone2: "",
   nome: "Light Ball Pikachu",
+  cenario: "url(../img/fundoEletrico.png), linear-gradient(to bottom,  rgb(255, 205, 3) 0%, yellow 100%)",
   imagem: "./img/LightBallPikachu.gif",
   elemento: "elétrico",
   funcao: "offtank",
@@ -71,9 +86,11 @@ const ListaDeOffTanks = [
 
 // FOGO 
 {
+  cardFundo: "linear-gradient(to bottom, #f7e172 0%,  #e7d26d 100%), linear-gradient(to bottom, rgb(255, 188, 3) 0%, rgb(255, 187, 0) 100%)",
   icone: "./img/fogo.png",
   icone2: "",
   nome: "Arcanine",
+  cenario: "url(../img/fundofogo.png), linear-gradient(to bottom,  rgb(255, 205, 3) 0%, yellow 100%)",
   imagem: "./img/Arcanine.gif",
   elemento: "fogo",
   funcao: "offtank",
@@ -81,9 +98,11 @@ const ListaDeOffTanks = [
   tier: "2"
 },
 {
+  cardFundo: "linear-gradient(to bottom, #f7e172 0%,  #e7d26d 100%), linear-gradient(to bottom, rgb(255, 188, 3) 0%, rgb(255, 187, 0) 100%)",
   icone: "./img/fogo.png",
   icone2: "",
   nome: "Magmar",
+  cenario: "url(../img/fundoFogo.png), linear-gradient(to bottom,  rgb(255, 205, 3) 0%, yellow 100%)",
   imagem: "./img/Magmar.gif",
   elemento: "fogo",
   funcao: "offtank",
@@ -326,8 +345,11 @@ const funcaoPoke = document.querySelectorAll('.funcao');
 const levelPoke = document.querySelectorAll('.level');
 const tierPoke = document.querySelectorAll('.tier');
 const cards = document.querySelectorAll('.card');
+const cenarios = document.querySelectorAll('.caixaDaImagem');
 
-for (let i = 0; i < ListaDeOffTanks.length; i++) {
+for (let i = 0; i < 8; i++) {
+  cenarios[i].style.backgroundImage = ListaDeOffTanks[i].cenario;
+  cards[i].style.backgroundImage = ListaDeOffTanks[i].cardFundo;
   iconePoke[i].src = ListaDeOffTanks[i].icone;
   imagemPoke[i].src = ListaDeOffTanks[i].imagem;
   nomePoke[i].textContent = ListaDeOffTanks[i].nome;

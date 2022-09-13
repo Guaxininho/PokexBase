@@ -8,7 +8,7 @@
 
 body {
   box-sizing: border-box;
-  background-color: #BF7449;
+  background-color: #2a2a2a;
 }
 
 html {
@@ -25,12 +25,15 @@ html {
   width: 95%;
   margin: 0 auto;
   row-gap: 2rem;
-  -moz-column-gap: 0.1rem;
-       column-gap: 0.1rem;
+  -moz-column-gap: 0.4rem;
+       column-gap: 0.4rem;
   place-items: center;
 }
 #gridCards .card {
-  padding: 1rem;
+  position: relative;
+  padding: 0.5rem;
+  background-image: linear-gradient(to bottom, #c9fac6 0%, #98fc91 100%), linear-gradient(to bottom, rgb(255, 188, 3) 0%, rgb(255, 187, 0) 100%);
+  background-clip: content-box, padding-box;
   width: 18rem;
   height: 30rem;
   background-color: #D99E6A;
@@ -42,29 +45,64 @@ html {
   cursor: pointer;
   transition: 0.5s;
 }
+#gridCards .card .boxLevel {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 70%;
+  height: 1.7rem;
+  background-image: linear-gradient(to bottom, yellow 0%, rgb(255, 217, 0) 100%);
+  text-align: center;
+  border-bottom-left-radius: 0.3rem;
+  border-bottom-right-radius: 0.3rem;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 1px -1px, rgba(0, 0, 0, 0.14) 0px 1px 1px 0px, rgba(0, 0, 0, 0.12) 0px 1px 3px 0px;
+}
 #gridCards .card .flexboxicon {
+  position: relative;
+  top: 2%;
   display: flex;
   justify-content: space-evenly;
-  height: 5rem;
+  height: 3.5rem;
 }
-#gridCards .card .flexboxicon .iconeElemento,
+#gridCards .card .flexboxicon .iconeElemento {
+  position: absolute;
+  left: 97%;
+  transform: translateX(-100%);
+  width: 2rem;
+  height: 2rem;
+}
 #gridCards .card .flexboxicon .iconeElemento2 {
-  width: 2.4rem;
-  height: 2.4rem;
+  position: absolute;
+  left: 83%;
+  transform: translateX(-100%);
+  width: 2rem;
+  height: 2rem;
 }
 #gridCards .card .flexboxicon .tituloPoke {
+  position: absolute;
+  left: calc(2.5% + 0.5rem);
+  width: 65%;
   align-self: start;
-  text-align: center;
   text-transform: uppercase;
   letter-spacing: 0.1rem;
-  color: #312519;
-  font-size: 2rem;
+  color: #191c1f;
+  font-size: 1.2rem;
 }
 #gridCards .card .caixaDaImagem {
   position: relative;
   height: 11rem;
-  width: 100%;
+  width: 90%;
+  padding: 0.3rem;
   margin-bottom: 2rem;
+  background-image: url(../img/fundoNature.png), linear-gradient(to bottom, rgb(255, 205, 3) 0%, yellow 100%);
+  background-size: cover;
+  background-clip: content-box, padding-box;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 1px -1px, rgba(0, 0, 0, 0.14) 0px 1px 1px 0px, rgba(0, 0, 0, 0.12) 0px 1px 3px 0px;
+  margin: 0.5rem auto;
+  font-weight: 700;
 }
 #gridCards .card .caixaDaImagem .imagemPoke {
   position: absolute;
@@ -72,11 +110,35 @@ html {
   left: 50%;
   transform: translate(-50%, -50%);
 }
+#gridCards .card .elemento {
+  margin-top: 3.5rem;
+}
+#gridCards .card .flexboxIcone {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  top: 1rem;
+  width: 70%;
+  justify-content: start;
+}
+#gridCards .card .flexboxIcone .iconfuncao {
+  height: 2rem;
+  padding-right: 0.3rem;
+}
+#gridCards .card .tierMudanca {
+  margin-top: 1.5rem;
+}
+#gridCards .card .tier {
+  font-size: 2rem;
+  color: #191c1f;
+  font-weight: bold;
+}
 #gridCards .card h3 {
-  color: #3d2f20;
+  color: #2a2e33;
   font-size: 1.5rem;
-  margin-bottom: 0.4rem;
   text-transform: uppercase;
+  text-align: center;
 }
 #gridCards .card h3 span {
   text-transform: lowercase;
