@@ -27,6 +27,7 @@ html {
   row-gap: 2rem;
   -moz-column-gap: 0.1rem;
        column-gap: 0.1rem;
+  place-items: center;
 }
 #gridCards .card {
   padding: 1rem;
