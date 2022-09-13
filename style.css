@@ -21,10 +21,12 @@ html {
 
 #gridCards {
   display: grid;
-  grid-template: 1fr/repeat(6, 1fr);
+  grid-template: 1fr/repeat(auto-fit, minmax(20rem, 1fr));
   width: 95%;
   margin: 0 auto;
-  row-gap: 1rem;
+  row-gap: 2rem;
+  -moz-column-gap: 1rem;
+       column-gap: 1rem;
 }
 #gridCards .card {
   padding: 1rem;
@@ -79,13 +81,20 @@ html {
   text-transform: lowercase;
 }
 
-@media (max-width: 1920px) {
-  #gridCards {
-    grid-template: 1fr/repeat(8, 1fr);
-  }
+#barraUtilitarios {
+  width: 100%;
+  height: 5rem;
+  margin-bottom: 2rem;
 }
-@media (max-width: 1366px) {
-  #gridCards {
-    grid-template: 1fr/repeat(6, 1fr);
-  }
+
+#inputPesquisa {
+  height: 2.5rem;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-color: rgba(0, 0, 0, 0.3);
+  border-radius: 0.5rem;
+  outline: none;
+  background-color: #D99E6A;
 }/*# sourceMappingURL=style.css.map */
