@@ -1,0 +1,65 @@
+.corta{
+  display: none;
+}
+#gridCards{
+  display: grid;
+  grid-template: 1fr / repeat(6, 1fr) ;
+  width: 95%;
+  margin: 0 auto;
+  row-gap: 1rem;
+  .card {
+    padding: 1rem;
+    width: 20rem;
+    height: 30rem;
+    background-color: #D99E6A;
+    border-radius: .5rem;
+    box-shadow: rgb(0 0 0 / 20%) 0px 2px 1px -1px, rgb(0 0 0 / 14%) 0px 1px 1px 0px, rgb(0 0 0 / 12%) 0px 1px 3px 0px;
+    
+    &:hover{
+      background-color: #BF8B5E;
+      cursor: pointer;
+      transition: .5s;
+    }
+    .flexboxicon {
+      display: flex;
+      justify-content: space-evenly;
+      height: 5rem;
+      .iconeElemento,
+      .iconeElemento2{
+        width: 2.4rem;
+        height: 2.4rem;
+      }
+      .tituloPoke{
+        align-self: start;
+        text-align: center;
+        text-transform: uppercase;
+        letter-spacing: .1rem;
+        color: #312519;
+        font-size: 2rem;
+      }
+    }
+
+    .caixaDaImagem{
+      position: relative;
+      height: 11rem;
+      width: 100%;
+      margin-bottom: 2rem;
+      .imagemPoke{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+      }
+    }
+    
+    h3{
+      color: #3d2f20;
+      font-size: 1.5rem;
+      margin-bottom: .4rem;
+      text-transform: uppercase;
+      span{
+        text-transform: lowercase;
+      }
+    }
+  }
+}
