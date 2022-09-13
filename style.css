@@ -21,7 +21,7 @@ html {
 
 #gridCards {
   display: grid;
-  grid-template: 1fr/repeat(auto-fill, minmax(20rem, 1fr));
+  grid-template: 1fr/repeat(auto-fill, minmax(18rem, 1fr));
   width: 95%;
   margin: 0 auto;
   row-gap: 2rem;
@@ -30,7 +30,7 @@ html {
 }
 #gridCards .card {
   padding: 1rem;
-  width: 20rem;
+  width: 18rem;
   height: 30rem;
   background-color: #D99E6A;
   border-radius: 0.5rem;

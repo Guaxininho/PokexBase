@@ -9,7 +9,7 @@ const ListaDeOffTanks = [
   icone2: "",
   nome: "Gogoat",
   imagem: "./img/Gogoat.gif",
-  elemento: "planta",
+  elemento: "naturia",
   funcao: "offtank",
   level: "100",
   tier: "2"
@@ -19,7 +19,7 @@ const ListaDeOffTanks = [
   icone2: "",
   nome: "Sceptile",
   imagem: "./img/Sceptile.gif",
-  elemento: "planta",
+  elemento: "naturia",
   funcao: "offtank",
   level: "80",
   tier: "3"
