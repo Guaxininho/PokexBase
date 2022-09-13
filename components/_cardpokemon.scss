@@ -3,7 +3,7 @@
 }
 #gridCards{
   display: grid;
-  grid-template: 1fr / repeat(auto-fit, minmax(20rem, 1fr));
+  grid-template: 1fr / repeat(auto-fill, minmax(20rem, 1fr));
   width: 95%;
   margin: 0 auto;
   row-gap: 2rem;

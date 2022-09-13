@@ -325,6 +325,7 @@ const elementoPoke = document.querySelectorAll('.elemento');
 const funcaoPoke = document.querySelectorAll('.funcao');
 const levelPoke = document.querySelectorAll('.level');
 const tierPoke = document.querySelectorAll('.tier');
+const cards = document.querySelectorAll('.card');
 
 for (let i = 0; i < ListaDeOffTanks.length; i++) {
   iconePoke[i].src = ListaDeOffTanks[i].icone;
@@ -340,4 +341,17 @@ for (let i = 0; i < ListaDeOffTanks.length; i++) {
     iconePoke2[i].src = ListaDeOffTanks[i].icone2;
   }
   
+}
+
+const search = document.querySelector('#inputPesquisa');
+const listaVazia = [];
+
+
+for (let i = 0; i < cards.length; i++) {
+  search.addEventListener("input", (e)=> {
+    let digitado = e.target.value.toLowerCase()
+    const visivel = ListaDeOffTanks[i].nome.toLowerCase().includes(digitado)
+      cards[i].classList.toggle("corta", !visivel)
+  })
+
 }
