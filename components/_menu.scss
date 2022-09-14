@@ -1,6 +1,10 @@
 
+@import './animacoes';
+
+
 #barraUtilitarios{
-  padding: 1rem;
+  padding-left: 2.5%;
+  padding-right: calc(2.5% + .5rem);
   display: flex;
   position: relative;
   width: 100%;
@@ -13,5 +17,20 @@
 
   #tituloDoSite{
       height: 5rem;
+      animation: engorda 2s;
+      animation-fill-mode: forwards;
+  }
+  #menuDeIconesFiltro{
+    .iconeFiltro{
+      cursor: pointer;
+      margin-right: .5rem;
+      opacity: .8;
+      &:last-child{
+        margin-right: 0;
+      }
+      &:hover{
+        opacity: 1;
+      }
+    }
   }
 }

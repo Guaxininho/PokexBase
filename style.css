@@ -144,8 +144,26 @@ html {
   text-transform: lowercase;
 }
 
+@-webkit-keyframes engorda {
+  0% {
+    opacity: 0.1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes engorda {
+  0% {
+    opacity: 0.1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 #barraUtilitarios {
-  padding: 1rem;
+  padding-left: 2.5%;
+  padding-right: calc(2.5% + 0.5rem);
   display: flex;
   position: relative;
   width: 100%;
@@ -158,6 +176,21 @@ html {
 }
 #barraUtilitarios #tituloDoSite {
   height: 5rem;
+  -webkit-animation: engorda 2s;
+          animation: engorda 2s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+#barraUtilitarios #menuDeIconesFiltro .iconeFiltro {
+  cursor: pointer;
+  margin-right: 0.5rem;
+  opacity: 0.8;
+}
+#barraUtilitarios #menuDeIconesFiltro .iconeFiltro:last-child {
+  margin-right: 0;
+}
+#barraUtilitarios #menuDeIconesFiltro .iconeFiltro:hover {
+  opacity: 1;
 }
 
 #inputPesquisa {
@@ -165,5 +198,5 @@ html {
   border-color: rgba(0, 0, 0, 0.3);
   border-radius: 0.5rem;
   outline: none;
-  background-color: yellow;
+  background-color: white;
 }/*# sourceMappingURL=style.css.map */

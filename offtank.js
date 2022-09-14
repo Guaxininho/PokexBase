@@ -41,6 +41,7 @@ const cenarioFantasma = "url(../img/fundoFantasma.png), linear-gradient(to botto
 const ListaDeOffTanks = [
 // PLANTA
 {
+  clan: "naturia",
   cardFundo: fundoPlanta,
   icone: "./img/grass.png",
   icone2: "",
@@ -53,6 +54,7 @@ const ListaDeOffTanks = [
   tier: "2"
 },
 {
+  clan: "naturia",
   cardFundo: fundoPlanta,
   icone: "./img/grass.png",
   icone2: "",
@@ -67,6 +69,7 @@ const ListaDeOffTanks = [
 
 // LUTADOR
 {
+  clan: "gardestrike",
   cardFundo: fundoLutador,
   icone: "./img/lutador.png",
   icone2: "",
@@ -79,6 +82,7 @@ const ListaDeOffTanks = [
   tier: "2"
 },
 {
+  clan: "gardestrike",
   cardFundo: fundoLutador,
   icone: "./img/lutador.png",
   icone2: "",
@@ -93,6 +97,7 @@ const ListaDeOffTanks = [
 
 // RAIBOLT
 {
+  clan: "raibolt",
   cardFundo: fundoEletrico,
   icone: "./img/eletrico.png",
   icone2: "",
@@ -105,6 +110,7 @@ const ListaDeOffTanks = [
   tier: "2"
 },
 {
+  clan: "raibolt",
   cardFundo: fundoEletrico,
   icone: "./img/eletrico.png",
   icone2: "",
@@ -119,6 +125,7 @@ const ListaDeOffTanks = [
 
 // FOGO 
 {
+  clan: "volcanic",
   cardFundo: fundoFogo,
   icone: "./img/fogo.png",
   icone2: "",
@@ -131,6 +138,7 @@ const ListaDeOffTanks = [
   tier: "2"
 },
 {
+  clan: "volcanic",
   cardFundo: fundoFogo,
   icone: "./img/fogo.png",
   icone2: "",
@@ -145,6 +153,7 @@ const ListaDeOffTanks = [
 
 // ÁGUA
 {
+  clan: "seavell",
   cardFundo: fundoAgua,
   icone: "./img/agua.png",
   icone2: "",
@@ -157,6 +166,7 @@ const ListaDeOffTanks = [
   tier: "2"
 },
 {
+  clan: "seavell",
   cardFundo: fundoAgua,
   icone: "./img/agua.png",
   icone2: "",
@@ -171,6 +181,7 @@ const ListaDeOffTanks = [
 
 // PEDRA
 {
+  clan: "orebound",
   cardFundo: fundoPedra,
   icone: "./img/Pedra.png",
   icone2: "",
@@ -183,6 +194,7 @@ const ListaDeOffTanks = [
   tier: "2"
 },
 {
+  clan: "orebound seavell",
   cardFundo: fundoPedra,
   icone: "./img/Pedra.png",
   icone2: "./img/agua.png",
@@ -197,6 +209,7 @@ const ListaDeOffTanks = [
 
 // VOADOR
 {
+  clan: "wingeon",
   cardFundo: fundoVoador,
   icone: "./img/voador.png",
   icone2: "",
@@ -209,6 +222,7 @@ const ListaDeOffTanks = [
   tier: "2"
 },
 { 
+  clan: "wingeon naturia",
   cardFundo: fundoVoador,
   icone:"./img/voador.png",
   icone2:"./img/inseto.png",
@@ -223,6 +237,7 @@ const ListaDeOffTanks = [
 
 // VENENO 
 { 
+  clan: "malefic",
   cardFundo: fundoVeneno,
   icone:"./img/veneno.png",
   icone2: "",
@@ -235,6 +250,7 @@ const ListaDeOffTanks = [
   tier: "3"
 },
 {
+  clan: "malefic",
   cardFundo: fundoVeneno,
   icone:"./img/veneno.png",
   icone2: "",
@@ -249,6 +265,7 @@ const ListaDeOffTanks = [
 
 // FADA
 {
+  clan: "psycraft",
   cardFundo: fundoFada,
   icone:"./img/fada.png",
   icone2: "",
@@ -261,6 +278,7 @@ const ListaDeOffTanks = [
   tier: "2"
 },
 {
+  clan: "psycraft",
   cardFundo: fundoFada,
   icone:"./img/fada.png",
   icone2: "",
@@ -275,6 +293,7 @@ const ListaDeOffTanks = [
 
 // PSIQUICO
 {
+  clan: "psycraft",
   cardFundo: fundoPsiquico,
   icone:"./img/psiquico.png",
   icone2: "",
@@ -289,6 +308,7 @@ const ListaDeOffTanks = [
 
 // DARK
 {
+  clan: "malefic",
   cardFundo: fundoDark,
   icone:"./img/dark.png",
   icone2: "",
@@ -303,6 +323,7 @@ const ListaDeOffTanks = [
 
 // TERRA
 {
+  clan: "orebound ironhard",
   cardFundo: fundoTerra,
   icone:"./img/terra.png",
   icone2: "./img/metal.png",
@@ -317,6 +338,7 @@ const ListaDeOffTanks = [
 
 // METAL
 {
+  clan: "ironhard",
   cardFundo: fundoMetal,
   icone:"./img/metal.png",
   icone2: "",
@@ -328,7 +350,7 @@ const ListaDeOffTanks = [
   level: "100",
   tier: "2"
 },
-{
+{ clan: "ironhard psycraft",
   cardFundo: fundoMetal,
   icone:"./img/metal.png",
   icone2: "./img/psiquico.png",
@@ -342,6 +364,7 @@ const ListaDeOffTanks = [
 },
 // GELO
 {
+  clan: "seavell",
   cardFundo: fundoGelo,
   icone:"./img/gelo.png",
   icone2: "",
@@ -356,6 +379,7 @@ const ListaDeOffTanks = [
 
 // INSETO
 {
+  clan: "naturia wingeon",
   cardFundo: fundoInseto,
   icone:"./img/inseto.png",
   icone2: "./img/voador.png",
@@ -368,6 +392,7 @@ const ListaDeOffTanks = [
   tier: "2"
 },
 {
+  clan: "naturia",
   cardFundo: fundoInseto,
   icone:"./img/inseto.png",
   icone2: "",
@@ -382,6 +407,7 @@ const ListaDeOffTanks = [
 
 // FANTASMA
 {
+  clan: "malefic",
   cardFundo: fundoFantasma,
   icone: "./img/fantasma.png",
   icone2: "",
@@ -393,7 +419,7 @@ const ListaDeOffTanks = [
   level: "100",
   tier: "2"
 },
-{
+{ clan: "malefic",
   cardFundo: fundoFantasma,
   icone: "./img/fantasma.png",
   icone2: "",
@@ -450,4 +476,41 @@ for (let i = 0; i < cards.length; i++) {
       cards[i].classList.toggle("corta", !visivel)
   })
 
+}
+
+const listaDeBotoesClans = document.querySelectorAll('.iconeFiltro');
+
+
+
+ let conferido;    //VARIAVEL QUE RETORNA SE É TRUE OU FALSE SE CONTÉM O NOME DO ITEM CLICADO NA LISTA DE CARDS
+ let itemClicado;  //VARIAVEL QUE GUARDA O NOME DO ITEM CLICADO
+
+ // i esta baseado no numero de icones de clan
+ // quando clica em um
+
+
+for (let i = 0; i < listaDeBotoesClans.length; i++) {
+  listaDeBotoesClans[i].addEventListener('click', ()=>{
+    itemClicado = listaDeBotoesClans[i].classList[1]
+
+    for (let j = 0; j < cards.length; j++) {
+      conferido = ListaDeOffTanks[j].clan.includes(itemClicado)
+      cards[j].classList.toggle("corta", !conferido)
+      // if(conferido === false){
+      //   cards[j].classList.add("corta")
+      // } else {
+      //   cards[j].classList.remove("corta")
+      // }
+      console.log(conferido)
+      
+    }
+
+    
+    // for (let j = 0; j < cards.length; j++) {
+    //   visivel2 = ListaDeOffTanks[i].clan.includes(itemClicado)
+    //   cards[j].classList.toggle("corta", !visivel2)
+      
+    // }
+  })
+  
 }
