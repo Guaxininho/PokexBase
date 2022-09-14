@@ -8,7 +8,7 @@
 
 body {
   box-sizing: border-box;
-  background-color: #2a2a2a;
+  background-color: #147cc7;
 }
 
 html {
@@ -145,19 +145,25 @@ html {
 }
 
 #barraUtilitarios {
+  padding: 1rem;
+  display: flex;
+  position: relative;
   width: 100%;
-  height: 5rem;
+  height: 7rem;
+  background-color: #199EFF;
   margin-bottom: 2rem;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 1px -1px, rgba(0, 0, 0, 0.14) 0px 1px 1px 0px, rgba(0, 0, 0, 0.12) 0px 1px 3px 0px;
+  align-items: center;
+  justify-content: space-between;
+}
+#barraUtilitarios #tituloDoSite {
+  height: 5rem;
 }
 
 #inputPesquisa {
   height: 2.5rem;
-  position: relative;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   border-color: rgba(0, 0, 0, 0.3);
   border-radius: 0.5rem;
   outline: none;
-  background-color: #D99E6A;
+  background-color: yellow;
 }/*# sourceMappingURL=style.css.map */

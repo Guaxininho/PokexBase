@@ -1,5 +1,5 @@
 // VARIAVEIS DE FUNDO DAS CARTAS
-const fundoPlanta = "linear-gradient(to bottom, #c9fac6 0%,  #98fc91 100%), linear-gradient(to bottom, rgb(255, 188, 3) 0%, rgb(255, 187, 0) 100%)";
+const fundoPlanta = "linear-gradient(to bottom, #74d76d 0%,  #78e071 100%), linear-gradient(to bottom, rgb(255, 188, 3) 0%, rgb(255, 187, 0) 100%)";
 const fundoLutador = "linear-gradient(to bottom, rgb(208, 147, 101) 0%, rgb(204, 130, 73) 100%), linear-gradient(to bottom, rgb(255, 188, 3) 0%, rgb(255, 187, 0) 100%)";
 const fundoEletrico = "linear-gradient(to bottom, #f7e172 0%,  #e7d26d 100%), linear-gradient(to bottom, rgb(255, 188, 3) 0%, rgb(255, 187, 0) 100%)";
 const fundoFogo = "linear-gradient(to bottom, #F26745 0%,  #e06040 100%), linear-gradient(to bottom, rgb(255, 188, 3) 0%, rgb(255, 187, 0) 100%)";
