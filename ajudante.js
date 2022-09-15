@@ -62,18 +62,42 @@ botaoAjudante.addEventListener('click', ()=>{
   } else if (inputElemento.value === "psiquico" || inputElemento.value === "fada" ) {
     clan = "psycraft"
   } 
-  
-  
   else {
-    clan = "nada"
+    clan = ""
   }
-
+  let clan2;
+  if(inputElemento2.value === "fogo"){
+    clan2 = "volcanic" 
+  } else if (inputElemento2.value === "agua" || inputElemento2.value === "gelo" ) {
+    clan2 = "seavell"
+  }  else if (inputElemento2.value === "pedra" || inputElemento2.value === "terra" ) {
+    clan2 = "orebound"
+  }  else if (inputElemento2.value === "pedra" || inputElemento2.value === "terra" ) {
+    clan2 = "orebound"
+  } else if (inputElemento2.value === "planta" || inputElemento2.value === "inseto" ) {
+    clan2 = "naturia"
+  } else if (inputElemento2.value === "lutador" || inputElemento2.value === "normal" ) {
+    clan2 = "gardestrike"
+  } else if (inputElemento2.value === "fantasma" || inputElemento2.value === "veneno" || inputElemento.value === "dark" ) {
+    clan2 = "malefic"
+  } else if (inputElemento2.value === "cristal" || inputElemento2.value === "metal" ) {
+    clan2 = "ironhard"
+  } else if (inputElemento2.value === "voador" || inputElemento2.value === "dragao" ) {
+    clan2 = "wingeon"
+  } else if (inputElemento2.value === "eletrico") {
+    clan2 = "raibolt"
+  } else if (inputElemento2.value === "psiquico" || inputElemento2.value === "fada" ) {
+    clan2 = "psycraft"
+  } 
+  else {
+    clan2 = ""
+  }
 
 
   resultadoAjudante.innerHTML = 
   `{ <br />
     elemento: "${inputElemento.value}", <br />
-    clan: "${clan}",<br />
+    clan: "${clan} ${clan2}",<br />
     cardFundo: fundo${inputElemento.value.charAt(0).toUpperCase() + inputElemento.value.slice(1)},<br />
     icone: "./img/${inputElemento.value}.png",<br />
     icone2: ${vazioBom},<br />

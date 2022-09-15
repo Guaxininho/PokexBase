@@ -68,7 +68,7 @@ const ListaDeOffTanks = [
 },
 { 
   elemento: "planta", 
-  clan: "naturia",
+  clan: "naturia wingeon",
   cardFundo: fundoPlanta,
   icone: "./img/planta.png",
   icone2: "./img/voador.png",
