@@ -82,6 +82,7 @@ const ListaDeOffTanks = [
   tier: "2"
 },
 {
+  elemento: "lutador",
   clan: "gardestrike",
   cardFundo: fundoLutador,
   icone: "./img/lutador.png",
@@ -89,7 +90,6 @@ const ListaDeOffTanks = [
   nome: "Mega Lopunny",
   cenario: cenarioLutador,
   imagem: "./img/MegaLopunny.gif",
-  elemento: "lutador",
   funcao: "offtank",
   level: "100",
   tier: "2"
@@ -491,26 +491,25 @@ const listaDeBotoesClans = document.querySelectorAll('.iconeFiltro');
 
 for (let i = 0; i < listaDeBotoesClans.length; i++) {
   listaDeBotoesClans[i].addEventListener('click', ()=>{
-    itemClicado = listaDeBotoesClans[i].classList[1]
-
-    for (let j = 0; j < cards.length; j++) {
-      conferido = ListaDeOffTanks[j].clan.includes(itemClicado)
-      cards[j].classList.toggle("corta", !conferido)
-      // if(conferido === false){
-      //   cards[j].classList.add("corta")
-      // } else {
-      //   cards[j].classList.remove("corta")
-      // }
-      console.log(conferido)
-      
+    if(listaDeBotoesClans[i].classList.contains("pressionado")){
+      for (let l = 0; l < cards.length; l++) {
+        cards[l].classList.remove("corta")
+      }
+      listaDeBotoesClans[i].classList.remove("pressionado")
+    } else{
+      listaDeBotoesClans[i].classList.add("pressionado")
+      itemClicado = listaDeBotoesClans[i].classList[1]
+      for (let j = 0; j < cards.length; j++) {
+        conferido = ListaDeOffTanks[j].clan.includes(itemClicado)
+        cards[j].classList.toggle("corta", !conferido)   
+      }
     }
-
-    
-    // for (let j = 0; j < cards.length; j++) {
-    //   visivel2 = ListaDeOffTanks[i].clan.includes(itemClicado)
-    //   cards[j].classList.toggle("corta", !visivel2)
-      
-    // }
   })
-  
+
+
 }
+
+// PEGAR OS QUE JA ESTAO FILTRADOS E SE ALGUM BOTAO TA PRESSIONADO VER SÓ DENTRO DAQUELE BOTAO O PROXIMO BOTAO
+
+
+

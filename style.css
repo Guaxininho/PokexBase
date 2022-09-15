@@ -146,19 +146,19 @@ html {
 
 @-webkit-keyframes engorda {
   0% {
-    opacity: 0.1;
+    opacity: 1;
   }
   100% {
-    opacity: 1;
+    opacity: 0;
   }
 }
 
 @keyframes engorda {
   0% {
-    opacity: 0.1;
+    opacity: 1;
   }
   100% {
-    opacity: 1;
+    opacity: 0;
   }
 }
 #barraUtilitarios {
@@ -176,21 +176,14 @@ html {
 }
 #barraUtilitarios #tituloDoSite {
   height: 5rem;
-  -webkit-animation: engorda 2s;
-          animation: engorda 2s;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
 }
 #barraUtilitarios #menuDeIconesFiltro .iconeFiltro {
   cursor: pointer;
   margin-right: 0.5rem;
-  opacity: 0.8;
+  opacity: 0.7;
 }
 #barraUtilitarios #menuDeIconesFiltro .iconeFiltro:last-child {
   margin-right: 0;
-}
-#barraUtilitarios #menuDeIconesFiltro .iconeFiltro:hover {
-  opacity: 1;
 }
 
 #inputPesquisa {
@@ -199,4 +192,106 @@ html {
   border-radius: 0.5rem;
   outline: none;
   background-color: white;
+}
+
+@keyframes engorda {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+#flexboxAjudante {
+  width: 110rem;
+  background-color: rgb(107, 233, 120);
+  position: absolute;
+  display: flex;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+#flexboxAjudante #chatAjudante {
+  font-size: 3rem;
+  width: 50rem;
+  height: 50rem;
+  background-color: gray;
+  border: none;
+}
+#flexboxAjudante .quechato {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(1, 66, 4);
+  justify-content: space-between;
+}
+#flexboxAjudante .quechato #pikachumotivador {
+  width: 10rem;
+  height: 10rem;
+}
+#flexboxAjudante .quechato #butonajudante {
+  padding: 1rem;
+  height: 5rem;
+  background-color: rgb(58, 210, 81);
+  margin-right: 1rem;
+  margin-left: 1rem;
+  border-radius: 1rem;
+  border-color: rgb(42, 151, 64);
+}
+#flexboxAjudante .quechato #butonajudante img {
+  width: 3rem;
+}
+#flexboxAjudante .quechato #textoPika {
+  padding: 1rem;
+  width: 10rem;
+  font-size: 2.5rem;
+  text-align: center;
+  color: white;
+}
+#flexboxAjudante #resultadoAjudante {
+  border: none;
+  height: 50rem;
+  width: 50rem;
+  outline: none;
+  font-size: 2rem;
+  align-self: center;
+  padding: 4rem;
+}
+#flexboxAjudante #organizacaoAjuda #copyAjudante {
+  position: absolute;
+  cursor: pointer;
+  left: 100%;
+  transform: translate(-100%);
+}
+#flexboxAjudante #organizacaoAjuda #textoCopiado {
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  position: absolute;
+  top: 3rem;
+  left: 100%;
+  transform: translate(-100%);
+  font-size: 1.5rem;
+}
+
+#reiDosInputs {
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  width: 50rem;
+}
+#reiDosInputs .labelAjudante {
+  text-transform: uppercase;
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 0.5rem;
+  margin-top: 1rem;
+}
+#reiDosInputs input {
+  height: 3rem;
+  font-size: 1.5rem;
 }/*# sourceMappingURL=style.css.map */

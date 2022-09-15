@@ -1,0 +1,102 @@
+@import './animacoes';
+
+#flexboxAjudante{
+  width: 110rem;
+  background-color: rgb(107, 233, 120);
+  position: absolute;
+  display: flex;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  // justify-content: space-between;
+  #chatAjudante{
+    font-size: 3rem;
+    width: 50rem;
+    height: 50rem;
+    background-color: gray;
+    border: none;
+    // outline: none;
+    
+  }
+  .quechato{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(1, 66, 4);
+    justify-content: space-between;
+    #pikachumotivador{
+      width: 10rem;
+      height: 10rem;
+    }
+    #butonajudante{
+      padding: 1rem;
+      height: 5rem;
+      background-color: rgb(58, 210, 81);
+      margin-right: 1rem;
+      margin-left: 1rem;
+      border-radius: 1rem;
+      border-color: rgb(42, 151, 64);
+      img{
+        width: 3rem;
+      }
+    }
+    #textoPika{
+      padding: 1rem;
+      width: 10rem;
+      font-size: 2.5rem;
+      text-align: center;
+      color: white;
+    }
+  }
+  #resultadoAjudante{
+    border: none;
+    height: 50rem;
+    width: 50rem;
+    outline: none;
+    font-size: 2rem;
+    align-self: center;
+    padding: 4rem;
+  }
+  #organizacaoAjuda{
+    #copyAjudante{
+      position: absolute;
+      cursor: pointer;
+      left: 100%;
+      transform: translate(-100%);
+    }
+    #textoCopiado{
+      background-color: rgba(0, 0, 0, 0.6);
+      color: white;
+      width: max-content;
+      padding: 1rem;
+      border-radius: .5rem;
+      position: absolute;
+      top: 3rem;
+      left: 100%;
+      transform: translate(-100%);
+      font-size: 1.5rem;
+      // animation: engorda 10s;
+      // animation-fill-mode: forwards;
+    }
+  }
+  
+}
+
+// INPUTS
+#reiDosInputs{
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  width: 50rem;
+  .labelAjudante{
+    text-transform: uppercase;
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: .5rem;
+    margin-top: 1rem;
+  }
+  input{
+    height: 3rem;
+    font-size: 1.5rem;
+  }
+}

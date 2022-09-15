@@ -1,0 +1,56 @@
+<!-- {
+  elemento: "lutador",
+  clan: "gardestrike", (depende do elemento)
+  cardFundo: fundoLutador, (depende do elemento)
+  icone: "./img/lutador.png", (depende do elemento)
+  icone2: "", (depende do elemento)
+  nome: "Mega Lopunny",
+  cenario: cenarioLutador, (depende do elemento)
+  imagem: "./img/MegaLopunny.gif",
+  funcao: "offtank",
+  level: "100",
+  tier: "2"
+} -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="style.css" rel="stylesheet"/>
+  <title>Ajudante</title>
+</head>
+<body>
+  
+  <div id="flexboxAjudante">
+    <div id="organizacaoAjuda">
+      <p id="textoCopiado" class="corta">Já foi copiado meu chapa!</p>
+      <img id="copyAjudante" src="./img/copy.png">
+    </div>
+  <div id="reiDosInputs">
+    <label class="labelAjudante"for="elementoAjudante">Elemento</label>
+    <input id="elementoAjudante" type="text">
+    <label class="labelAjudante"for="elementoAjudante2">Elemento 2</label>
+    <input id="elementoAjudante2" type="text" placeholder="Deixa em branco se não tiver">
+    <label class="labelAjudante"for="nomeAjudante">Nome</label>
+    <input id="nomeAjudante" type="text">
+    <label class="labelAjudante"for="funcaoAjudante">Função</label>
+    <input id="funcaoAjudante" type="text">
+    <label class="labelAjudante"for="levelAjudante">Level</label>
+    <input id="levelAjudante" type="number">
+    <label class="labelAjudante"for="tierAjudante">Tier</label>
+    <input id="tierAjudante" type="number">
+  </div>
+  <div class="quechato">
+  <p id="textoPika">Sim, o pikachu esta aqui para te motivar, força cara!</p>
+  <button id="butonajudante"><img src="./img/mudar.png"/></button>
+  <img id="pikachumotivador"src="./img/pikachumotivador.png"/>
+  </div>
+  <p id="resultadoAjudante" readonly="readonly"></p>
+  
+
+  
+  <script src="ajudante.js"></script>
+  </div>
+</body>
+</html>
