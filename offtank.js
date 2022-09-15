@@ -79,6 +79,19 @@ const ListaDeOffTanks = [
   level: "100",
   tier: "2"
 },
+{ 
+  elemento: "planta", 
+  clan: "naturia",
+  cardFundo: fundoPlanta,
+  icone: "./img/planta.png",
+  icone2: "./img/inseto.png",
+  nome: "Wormadam",
+  cenario: cenarioPlanta,
+  imagem: "./img/Wormadam.gif",
+  funcao: "cde",
+  level: "80",
+  tier: "3"
+},
 
 // LUTADOR
 {
@@ -134,6 +147,71 @@ const ListaDeOffTanks = [
   funcao: "offtank",
   level: "100",
   tier: "2"
+},
+{ 
+  elemento: "eletrico", 
+  clan: "raibolt ",
+  cardFundo: fundoEletrico,
+  icone: "./img/eletrico.png",
+  icone2: "",
+  nome: "Shiny Elekid",
+  cenario: cenarioEletrico,
+  imagem: "./img/ShinyElekid.gif",
+  funcao: "cde",
+  level: "100",
+  tier: "2"
+},
+{ 
+  elemento: "eletrico", 
+  clan: "raibolt ",
+  cardFundo: fundoEletrico,
+  icone: "./img/eletrico.png",
+  icone2: "",
+  nome: "Shiny Electrode",
+  cenario: cenarioEletrico,
+  imagem: "./img/ShinyElectrode.gif",
+  funcao: "cde",
+  level: "100",
+  tier: "2"
+},
+{ 
+  elemento: "eletrico", 
+  clan: "raibolt ",
+  cardFundo: fundoEletrico,
+  icone: "./img/eletrico.png",
+  icone2: "",
+  nome: "Manectric",
+  cenario: cenarioEletrico,
+  imagem: "./img/Manectric.gif",
+  funcao: "cde",
+  level: "80",
+  tier: "3"
+},
+{ 
+  elemento: "eletrico", 
+  clan: "raibolt ",
+  cardFundo: fundoEletrico,
+  icone: "./img/eletrico.png",
+  icone2: "",
+  nome: "Raichu",
+  cenario: cenarioEletrico,
+  imagem: "./img/Raichu.gif",
+  funcao: "cde",
+  level: "80",
+  tier: "3"
+},
+{ 
+  elemento: "eletrico", 
+  clan: "raibolt ",
+  cardFundo: fundoEletrico,
+  icone: "./img/eletrico.png",
+  icone2: "",
+  nome: "Jolteon",
+  cenario: cenarioEletrico,
+  imagem: "./img/Jolteon.gif",
+  funcao: "cde",
+  level: "80",
+  tier: "3"
 },
 
 // FOGO 
@@ -416,6 +494,45 @@ const ListaDeOffTanks = [
   funcao: "offtank",
   level: "100",
   tier: "2"
+},
+{ 
+  elemento: "inseto", 
+  clan: "naturia malefic",
+  cardFundo: fundoInseto,
+  icone: "./img/inseto.png",
+  icone2: "./img/veneno.png",
+  nome: "Mega Beedrill",
+  cenario: cenarioInseto,
+  imagem: "./img/MegaBeedrill.gif",
+  funcao: "cde",
+  level: "100",
+  tier: "2"
+},
+{ 
+  elemento: "inseto", 
+  clan: "naturia ",
+  cardFundo: fundoInseto,
+  icone: "./img/inseto.png",
+  icone2: "",
+  nome: "Shiny Kricketune",
+  cenario: cenarioInseto,
+  imagem: "./img/ShinyKricketune.gif",
+  funcao: "cde",
+  level: "100",
+  tier: "2"
+},
+{ 
+  elemento: "inseto", 
+  clan: "naturia ",
+  cardFundo: fundoInseto,
+  icone: "./img/inseto.png",
+  icone2: "",
+  nome: "Kricketune",
+  cenario: cenarioInseto,
+  imagem: "./img/Kricketune.gif",
+  funcao: "cde",
+  level: "80",
+  tier: "3"
 },
 
 // FANTASMA
