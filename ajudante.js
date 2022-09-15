@@ -11,6 +11,7 @@ const resultadoAjudante = document.querySelector('#resultadoAjudante');
 let vazioBom;
 const botaoCopiar = document.querySelector("#copyAjudante");
 const textoCopiadoMsg = document.querySelector("#textoCopiado");
+let vazioRuim;
 
 
 // resultadoAjudante.value = inputElemento.value;
@@ -22,16 +23,20 @@ botaoCopiar.addEventListener('click', ()=>{
 
 })
 
-
-
-
-
 botaoAjudante.addEventListener('click', ()=>{
   if (inputElemento2.value === ""){
     vazioBom = `""`
    } else {
      vazioBom = `"./img/${inputElemento2.value}.png"`
    }
+   if (inputLevel.value === "80"){
+    vazioRuim = "3"
+   } if(inputLevel.value === "100"){
+    vazioRuim = "2"
+   }else {
+    vazioRuim = inputTier.value
+   }
+
   // resultadoAjudante.value = inputElemento.value;
   let clan;
   if(inputElemento.value === "fogo"){
@@ -55,7 +60,7 @@ botaoAjudante.addEventListener('click', ()=>{
     cenario: cenario${inputElemento.value.charAt(0).toUpperCase() + inputElemento.value.slice(1)},<br />
     funcao: "${inputFuncao.value.toLowerCase()}",<br />
     level: "${inputLevel.value}",<br />
-    tier: "${inputTier.value}"<br />
+    tier: "${vazioRuim}"<br />
   }`
 }
 )
