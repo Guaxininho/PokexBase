@@ -69,7 +69,7 @@ const ListaDeOffTanks = [
 { 
   elemento: "planta", 
   clan: "naturia",
-  cardFundo: "fundoPlanta",
+  cardFundo: fundoPlanta,
   icone: "./img/planta.png",
   icone2: "./img/voador.png",
   nome: "Tropius",
