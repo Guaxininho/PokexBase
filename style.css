@@ -152,6 +152,21 @@ html {
   text-transform: lowercase;
 }
 
+@media (max-width: 580px) {
+  #tituloDoSite {
+    display: none;
+  }
+}
+@media (max-width: 333px) {
+  #menuDeIconesFiltro {
+    display: none;
+  }
+  #inputPesquisa {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
 @-webkit-keyframes engorda {
   0% {
     opacity: 1;
@@ -160,7 +175,6 @@ html {
     opacity: 0;
   }
 }
-
 @keyframes engorda {
   0% {
     opacity: 1;

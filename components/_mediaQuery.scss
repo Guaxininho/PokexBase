@@ -1,12 +1,16 @@
-// @media (max-width: 1920px){
-
-//   #gridCards{
-//     grid-template: 1fr / repeat(8, 1fr) ;
-//   }
-// }
-// @media (max-width: 1366px){
-
-//   #gridCards{
-//     grid-template: 1fr / repeat(6, 1fr) ;
-//   }
-// }
+@media (max-width: 580px){
+#tituloDoSite{
+  display: none;
+}
+}
+@media (max-width: 333px){
+  #menuDeIconesFiltro{
+      display: none;
+    }
+  #inputPesquisa{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  }
+  
