@@ -43,7 +43,7 @@ const ListaDeOffTanks = [
 {
   clan: "naturia",
   cardFundo: fundoPlanta,
-  icone: "./img/grass.png",
+  icone: "./img/planta.png",
   icone2: "",
   nome: "Gogoat",
   cenario: cenarioPlanta,
@@ -56,7 +56,7 @@ const ListaDeOffTanks = [
 {
   clan: "naturia",
   cardFundo: fundoPlanta,
-  icone: "./img/grass.png",
+  icone: "./img/planta.png",
   icone2: "",
   nome: "Sceptile",
   cenario: cenarioPlanta,
@@ -65,6 +65,19 @@ const ListaDeOffTanks = [
   funcao: "offtank",
   level: "80",
   tier: "3"
+},
+{ 
+  elemento: "planta", 
+  clan: "naturia",
+  cardFundo: "fundoPlanta",
+  icone: "./img/planta.png",
+  icone2: "./img/voador.png",
+  nome: "Tropius",
+  cenario: cenarioPlanta,
+  imagem: "./img/Tropius.gif",
+  funcao: "cde",
+  level: "100",
+  tier: "2"
 },
 
 // LUTADOR
@@ -509,7 +522,6 @@ for (let i = 0; i < listaDeBotoesClans.length; i++) {
 
 }
 
-// PEGAR OS QUE JA ESTAO FILTRADOS E SE ALGUM BOTAO TA PRESSIONADO VER SÓ DENTRO DAQUELE BOTAO O PROXIMO BOTAO
-
+// conferir se tem um botão "pressionado", se sim, pegar a classe dele (ex: orebound) e procurar dentro da classe dele se tem o prox botão clicado
 
 

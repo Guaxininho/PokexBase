@@ -91,6 +91,8 @@
       margin: .5rem auto;
       font-weight: 700;
       .imagemPoke{
+        max-width: 100%;
+        max-height: 100%;
         position: absolute;
         top: 50%;
         left: 50%;
@@ -107,7 +109,7 @@
       display: flex;
       // background-color: red;
       top: 1rem;
-      width: 70%;
+      width: fit-content;
       justify-content: start;
       .iconfuncao {
         height: 2rem;

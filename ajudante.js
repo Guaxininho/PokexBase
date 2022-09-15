@@ -73,7 +73,7 @@ botaoAjudante.addEventListener('click', ()=>{
   resultadoAjudante.innerHTML = 
   `{ <br />
     elemento: "${inputElemento.value}", <br />
-    clan: ${clan},<br />
+    clan: "${clan}",<br />
     cardFundo: "fundo${inputElemento.value.charAt(0).toUpperCase() + inputElemento.value.slice(1)}",<br />
     icone: "./img/${inputElemento.value}.png",<br />
     icone2: ${vazioBom},<br />
