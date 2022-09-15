@@ -1,3 +1,36 @@
+for (let i = 0; i < 38; i++) {
+let criacao = document.createElement("div");
+criacao.className = "cardsRoot";
+criacao.innerHTML = `<figure class="card">
+<div class="flexboxicon">
+  <h1 class="tituloPoke"></h1>
+  <img class="iconeElemento" src="" />
+  <img class="iconeElemento2" src="" />
+</div>
+<div class="caixaDaImagem">
+  <img class="imagemPoke" src="a">
+  <figure class="boxLevel">lvl <span class="level"></span></figure>
+</div>
+<h3 class="elemento"></h3>
+<div class="flexboxIcone">
+  <img class="iconfuncao" src="./img/offtank.png"/>
+  <h3 class="funcao"></h3>
+</div>
+<h3 class="tierMudanca">Tier: <span class="tier"></span></h3>
+</figure>`;
+document.querySelector("#gridCards").appendChild(criacao);
+}
+
+// O CRIA CARTAS
+const rootDosCards = document.querySelectorAll('.cardsRoot');
+
+// for (let i = 0; i < 38; i++) {
+//   rootDosCards[i].innerHTML =
+//   `${arrayDeConteudo}`
+//   }
+
+
+
 // VARIAVEIS DE FUNDO DAS CARTAS
 const fundoPlanta = "linear-gradient(to bottom, #74d76d 0%,  #78e071 100%), linear-gradient(to bottom, rgb(255, 188, 3) 0%, rgb(255, 187, 0) 100%)";
 const fundoLutador = "linear-gradient(to bottom, rgb(208, 147, 101) 0%, rgb(204, 130, 73) 100%), linear-gradient(to bottom, rgb(255, 188, 3) 0%, rgb(255, 187, 0) 100%)";
@@ -563,6 +596,8 @@ const ListaDeOffTanks = [
 }
 ];
 
+
+
 // ZONA DE TESTE
 const imagemPoke = document.querySelectorAll('.imagemPoke');
 // imagemPoke.src = mismagius.imagem;
@@ -574,12 +609,14 @@ const elementoPoke = document.querySelectorAll('.elemento');
 const funcaoPoke = document.querySelectorAll('.funcao');
 const levelPoke = document.querySelectorAll('.level');
 const tierPoke = document.querySelectorAll('.tier');
-const cards = document.querySelectorAll('.card');
+const cards = document.querySelectorAll('.cardsRoot');
+const cardsCor = document.querySelectorAll('.card');
 const cenarios = document.querySelectorAll('.caixaDaImagem');
+
 
 for (let i = 0; i < ListaDeOffTanks.length; i++) {
   cenarios[i].style.backgroundImage = ListaDeOffTanks[i].cenario;
-  cards[i].style.backgroundImage = ListaDeOffTanks[i].cardFundo;
+  cardsCor[i].style.backgroundImage = ListaDeOffTanks[i].cardFundo;
   iconePoke[i].src = ListaDeOffTanks[i].icone;
   imagemPoke[i].src = ListaDeOffTanks[i].imagem;
   nomePoke[i].textContent = ListaDeOffTanks[i].nome;
@@ -640,5 +677,4 @@ for (let i = 0; i < listaDeBotoesClans.length; i++) {
 }
 
 // conferir se tem um botão "pressionado", se sim, pegar a classe dele (ex: orebound) e procurar dentro da classe dele se tem o prox botão clicado
-
 

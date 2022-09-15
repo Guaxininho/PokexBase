@@ -9,8 +9,12 @@
   row-gap: 2rem;
   column-gap: .4rem;
   place-items: center;
-  .card {
+  .cardsRoot{
     position: relative;
+    width: 18rem;
+    height: 30rem;
+  }
+  .card {
     padding: .5rem;
     background-image: linear-gradient(to bottom, #c9fac6 0%,  #98fc91 100%), linear-gradient(to bottom, rgb(255, 188, 3) 0%, rgb(255, 187, 0) 100%);
     background-clip: content-box, padding-box;
