@@ -1,4 +1,4 @@
-for (let i = 0; i < 38; i++) {
+for (let i = 0; i < 51; i++) {
 let criacao = document.createElement("div");
 criacao.className = "cardsRoot";
 criacao.innerHTML = `<figure class="card">
@@ -111,6 +111,19 @@ const ListaDeOffTanks = [
   funcao: "cde",
   level: "100",
   tier: "2"
+},
+{ 
+  elemento: "planta", 
+  clan: "naturia",
+  cardFundo: fundoPlanta,
+  icone: "./img/planta.png",
+  icone2: "./img/veneno.png",
+  nome: "Roserade",
+  cenario: cenarioPlanta,
+  imagem: "./img/Roserade.gif",
+  funcao: "cde",
+  level: "80",
+  tier: "3"
 },
 { 
   elemento: "planta", 
@@ -386,6 +399,19 @@ const ListaDeOffTanks = [
   level: "100",
   tier: "2"
 },
+{ 
+  elemento: "veneno", 
+  clan: "malefic ",
+  cardFundo: fundoVeneno,
+  icone: "./img/veneno.png",
+  icone2: "",
+  nome: "Shiny Weezing",
+  cenario: cenarioVeneno,
+  imagem: "./img/ShinyWeezing.gif",
+  funcao: "tank",
+  level: "100",
+  tier: "2"
+},
 
 // FADA
 {
@@ -567,6 +593,19 @@ const ListaDeOffTanks = [
   level: "80",
   tier: "3"
 },
+{ 
+  elemento: "inseto", 
+  clan: "naturia malefic",
+  cardFundo: fundoInseto,
+  icone: "./img/inseto.png",
+  icone2: "./img/veneno.png",
+  nome: "Shiny Beedrill",
+  cenario: cenarioInseto,
+  imagem: "./img/ShinyBeedrill.gif",
+  funcao: "cde",
+  level: "80",
+  tier: "3"
+},
 
 // FANTASMA
 {
@@ -591,6 +630,137 @@ const ListaDeOffTanks = [
   imagem: "./img/mismagius.gif",
   elemento: "fantasma",
   funcao: "offtank",
+  level: "100",
+  tier: "2"
+},
+// ============= novos
+{ 
+  elemento: "inseto", 
+  clan: "naturia ",
+  cardFundo: fundoInseto,
+  icone: "./img/inseto.png",
+  icone2: "",
+  nome: "Shiny Shuckle",
+  cenario: cenarioInseto,
+  imagem: "./img/ShinyShuckle.gif",
+  funcao: "tank",
+  level: "100",
+  tier: "2"
+},
+{ 
+  elemento: "psiquico", 
+  clan: "psycraft ",
+  cardFundo: fundoPsiquico,
+  icone: "./img/psiquico.png",
+  icone2: "",
+  nome: "Shiny Grumpig",
+  cenario: cenarioPsiquico,
+  imagem: "./img/ShinyGrumpig.gif",
+  funcao: "tank",
+  level: "100",
+  tier: "2"
+},
+{ 
+  elemento: "planta", 
+  clan: "naturia ",
+  cardFundo: fundoPlanta,
+  icone: "./img/planta.png",
+  icone2: "",
+  nome: "Leafeon",
+  cenario: cenarioPlanta,
+  imagem: "./img/Leafeon.gif",
+  funcao: "tank",
+  level: "80",
+  tier: "3"
+},
+{ 
+  elemento: "pedra", 
+  clan: "orebound ",
+  cardFundo: fundoPedra,
+  icone: "./img/pedra.png",
+  icone2: "",
+  nome: "Big Onix",
+  cenario: cenarioPedra,
+  imagem: "./img/BigOnix.gif",
+  funcao: "tank",
+  level: "100",
+  tier: "2"
+},
+{ 
+  elemento: "dark", 
+  clan: " ",
+  cardFundo: fundoDark,
+  icone: "./img/dark.png",
+  icone2: "",
+  nome: "Alolan Persian",
+  cenario: cenarioDark,
+  imagem: "./img/AlolanPersian.gif",
+  funcao: "tank",
+  level: "80",
+  tier: "3"
+},
+{ 
+  elemento: "fantasma", 
+  clan: "malefic ",
+  cardFundo: fundoFantasma,
+  icone: "./img/fantasma.png",
+  icone2: "",
+  nome: "Dusclops",
+  cenario: cenarioFantasma,
+  imagem: "./img/Dusclops.gif",
+  funcao: "tank",
+  level: "100",
+  tier: "2"
+},
+{ 
+  elemento: "fada", 
+  clan: "psycraft ",
+  cardFundo: fundoFada,
+  icone: "./img/fada.png",
+  icone2: "",
+  nome: "Clefable",
+  cenario: cenarioFada,
+  imagem: "./img/Clefable.gif",
+  funcao: "tank",
+  level: "80",
+  tier: "3"
+},
+{ 
+  elemento: "voador", 
+  clan: "wingeon ",
+  cardFundo: fundoVoador,
+  icone: "./img/voador.png",
+  icone2: "./img/dragao.png",
+  nome: "Dragonite",
+  cenario: cenarioVoador,
+  imagem: "./img/Dragonite.gif",
+  funcao: "tank",
+  level: "100",
+  tier: "2"
+},
+{ 
+  elemento: "metal", 
+  clan: "ironhard ",
+  cardFundo: fundoMetal,
+  icone: "./img/metal.png",
+  icone2: "",
+  nome: "Shiny Klinklang",
+  cenario: cenarioMetal,
+  imagem: "./img/ShinyKlinklang.gif",
+  funcao: "tank",
+  level: "100",
+  tier: "2"
+},
+{ 
+  elemento: "terra", 
+  clan: "orebound ",
+  cardFundo: fundoTerra,
+  icone: "./img/terra.png",
+  icone2: "",
+  nome: "Mudsdale",
+  cenario: cenarioTerra,
+  imagem: "./img/Mudsdale.gif",
+  funcao: "tank",
   level: "100",
   tier: "2"
 }
