@@ -79,6 +79,7 @@ botaoAjudante.addEventListener('click', ()=>{
     icone2: ${vazioBom},<br />
     nome: "${inputNome.value}",<br />
     cenario: cenario${inputElemento.value.charAt(0).toUpperCase() + inputElemento.value.slice(1)},<br />
+    imagem: "./img/${inputNome.value.charAt(0).toUpperCase() + inputNome.value.slice(1)}.gif",<br />
     funcao: "${inputFuncao.value.toLowerCase()}",<br />
     level: "${inputLevel.value}",<br />
     tier: "${vazioRuim}"<br />
