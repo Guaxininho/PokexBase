@@ -848,3 +848,29 @@ for (let i = 0; i < listaDeBotoesClans.length; i++) {
 
 // conferir se tem um botão "pressionado", se sim, pegar a classe dele (ex: orebound) e procurar dentro da classe dele se tem o prox botão clicado
 
+// PESQUISAR SOBRE ESTES CONCEITOS:
+
+// - LANDPAGE
+// - PIXELS DE RASTREAMENTO
+// - ADWORDS
+// - ANALYTCS (GTAG)
+// - FACEBOOK (FACEBOOK PIXEL CODE)
+// - CAROUSEL
+
+// FAZER O TAGUEAMENTO DO SITE POKEXBASE COM ANALYTCS
+// FAZER O TAGUEAMENTO DO SITE POKEXBASE COM FACEBOOK PIXEL CODE
+// RESOLVER O SAMESITE NO CONSOLE
+listaDeBotoesClans[0].addEventListener('click', gtag('event', 'orebound', {
+  eventCategory: 'engagement',
+  eventLabel: 'clan_orebound'
+}))
+
+listaDeBotoesClans[1].addEventListener('click', gtag('event', 'volcanic', {
+  eventCategory: 'engagement',
+  eventLabel: 'clan_volcanic'
+}))
+
+listaDeBotoesClans[1].addEventListener('click', gtag('event', 'naturia', {
+  eventCategory: 'engagement',
+  eventLabel: 'clan_naturia'
+}))
