@@ -850,7 +850,6 @@ tituloDoSite.addEventListener('click', ()=>{
 // PESQUISAR SOBRE ESTES CONCEITOS:
 
 // - LANDPAGE
-// - PIXELS DE RASTREAMENTO
 // - ADWORDS
 // - FACEBOOK (FACEBOOK PIXEL CODE)
 // - CAROUSEL
@@ -865,47 +864,49 @@ listaDeBotoesClans[0].addEventListener('click', gtag('event', 'orebound', {
   eventLabel: 'clan_orebound'
 }))
 
-listaDeBotoesClans[1].addEventListener('click', gtag('event', 'volcanic', {
-  eventCategory: 'engagement',
-  eventLabel: 'clan_volcanic'
-}))
+listaDeBotoesClans[1].addEventListener('click', ()=>{
+  gtag('event', 'volcanic', {
+    eventCategory: 'engagement',
+    eventLabel: 'clan_volcanic'
+  })
+})
 
-listaDeBotoesClans[2].addEventListener('click', gtag('event', 'naturia', {
-  eventCategory: 'engagement',
-  eventLabel: 'clan_naturia'
-}))
+// listaDeBotoesClans[2].addEventListener('click', gtag('event', 'naturia', {
+//   eventCategory: 'engagement',
+//   eventLabel: 'clan_naturia'
+// }))
 
-listaDeBotoesClans[3].addEventListener('click', gtag('event', 'gardestrike', {
-  eventCategory: 'engagement',
-  eventLabel: 'clan_gardestrike'
-}))
+// listaDeBotoesClans[3].addEventListener('click', gtag('event', 'gardestrike', {
+//   eventCategory: 'engagement',
+//   eventLabel: 'clan_gardestrike'
+// }))
 
-listaDeBotoesClans[4].addEventListener('click', gtag('event', 'malefic', {
-  eventCategory: 'engagement',
-  eventLabel: 'clan_malefic'
-}))
+// listaDeBotoesClans[4].addEventListener('click', gtag('event', 'malefic', {
+//   eventCategory: 'engagement',
+//   eventLabel: 'clan_malefic'
+// }))
 
-listaDeBotoesClans[5].addEventListener('click', gtag('event', 'ironhard', {
-  eventCategory: 'engagement',
-  eventLabel: 'clan_ironhard'
-}))
+// listaDeBotoesClans[5].addEventListener('click', gtag('event', 'ironhard', {
+//   eventCategory: 'engagement',
+//   eventLabel: 'clan_ironhard'
+// }))
 
-listaDeBotoesClans[6].addEventListener('click', gtag('event', 'wingeon', {
-  eventCategory: 'engagement',
-  eventLabel: 'clan_wingeon'
-}))
+// listaDeBotoesClans[6].addEventListener('click', gtag('event', 'wingeon', {
+//   eventCategory: 'engagement',
+//   eventLabel: 'clan_wingeon'
+// }))
 
-listaDeBotoesClans[7].addEventListener('click', gtag('event', 'raibolt', {
-  eventCategory: 'engagement',
-  eventLabel: 'clan_raibolt'
-}))
+// listaDeBotoesClans[7].addEventListener('click', gtag('event', 'raibolt', {
+//   eventCategory: 'engagement',
+//   eventLabel: 'clan_raibolt'
+// }))
 
-listaDeBotoesClans[8].addEventListener('click', gtag('event', 'psycraft', {
-  eventCategory: 'engagement',
-  eventLabel: 'clan_psycraft'
-}))
+// listaDeBotoesClans[8].addEventListener('click', gtag('event', 'psycraft', {
+//   eventCategory: 'engagement',
+//   eventLabel: 'clan_psycraft'
+// }))
 
-listaDeBotoesClans[9].addEventListener('click', gtag('event', 'seavell', {
-  eventCategory: 'engagement',
-  eventLabel: 'clan_seavell'
-}))
+// listaDeBotoesClans[9].addEventListener('click', gtag('event', 'seavell', {
+//   eventCategory: 'engagement',
+//   eventLabel: 'clan_seavell'
+// }))
