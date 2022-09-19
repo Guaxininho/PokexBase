@@ -198,6 +198,7 @@ html {
 }
 #barraUtilitarios #tituloDoSite {
   height: 5rem;
+  cursor: pointer;
 }
 #barraUtilitarios #menuDeIconesFiltro .iconeFiltro {
   cursor: pointer;

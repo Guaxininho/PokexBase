@@ -782,7 +782,7 @@ const tierPoke = document.querySelectorAll('.tier');
 const cards = document.querySelectorAll('.cardsRoot');
 const cardsCor = document.querySelectorAll('.card');
 const cenarios = document.querySelectorAll('.caixaDaImagem');
-
+const tituloDoSite = document.querySelector('#tituloDoSite');
 
 for (let i = 0; i < ListaDeOffTanks.length; i++) {
   cenarios[i].style.backgroundImage = ListaDeOffTanks[i].cenario;
@@ -828,38 +828,38 @@ const listaDeBotoesClans = document.querySelectorAll('.iconeFiltro');
 
 for (let i = 0; i < listaDeBotoesClans.length; i++) {
   listaDeBotoesClans[i].addEventListener('click', ()=>{
-    if(listaDeBotoesClans[i].classList.contains("pressionado")){
-      for (let l = 0; l < cards.length; l++) {
-        cards[l].classList.remove("corta")
-      }
-      listaDeBotoesClans[i].classList.remove("pressionado")
-    } else{
-      listaDeBotoesClans[i].classList.add("pressionado")
       itemClicado = listaDeBotoesClans[i].classList[1]
       for (let j = 0; j < cards.length; j++) {
         conferido = ListaDeOffTanks[j].clan.includes(itemClicado)
         cards[j].classList.toggle("corta", !conferido)   
       }
-    }
+    
   })
 
 
 }
 
-// conferir se tem um botão "pressionado", se sim, pegar a classe dele (ex: orebound) e procurar dentro da classe dele se tem o prox botão clicado
+tituloDoSite.addEventListener('click', ()=>{
+  for (let c = 0; c < cards.length; c++) {
+    cards[c].classList.remove('corta');  
+    
+  }
+  
+})
 
 // PESQUISAR SOBRE ESTES CONCEITOS:
 
 // - LANDPAGE
 // - PIXELS DE RASTREAMENTO
 // - ADWORDS
-// - ANALYTCS (GTAG)
 // - FACEBOOK (FACEBOOK PIXEL CODE)
 // - CAROUSEL
 
 // FAZER O TAGUEAMENTO DO SITE POKEXBASE COM ANALYTCS
 // FAZER O TAGUEAMENTO DO SITE POKEXBASE COM FACEBOOK PIXEL CODE
 // RESOLVER O SAMESITE NO CONSOLE
+
+// POSSO MELHORAR ISSO AQUI COM LOOP, MAS VOU FAZER DEPOIS
 listaDeBotoesClans[0].addEventListener('click', gtag('event', 'orebound', {
   eventCategory: 'engagement',
   eventLabel: 'clan_orebound'
@@ -870,7 +870,42 @@ listaDeBotoesClans[1].addEventListener('click', gtag('event', 'volcanic', {
   eventLabel: 'clan_volcanic'
 }))
 
-listaDeBotoesClans[1].addEventListener('click', gtag('event', 'naturia', {
+listaDeBotoesClans[2].addEventListener('click', gtag('event', 'naturia', {
   eventCategory: 'engagement',
   eventLabel: 'clan_naturia'
+}))
+
+listaDeBotoesClans[3].addEventListener('click', gtag('event', 'gardestrike', {
+  eventCategory: 'engagement',
+  eventLabel: 'clan_gardestrike'
+}))
+
+listaDeBotoesClans[4].addEventListener('click', gtag('event', 'malefic', {
+  eventCategory: 'engagement',
+  eventLabel: 'clan_malefic'
+}))
+
+listaDeBotoesClans[5].addEventListener('click', gtag('event', 'ironhard', {
+  eventCategory: 'engagement',
+  eventLabel: 'clan_ironhard'
+}))
+
+listaDeBotoesClans[6].addEventListener('click', gtag('event', 'wingeon', {
+  eventCategory: 'engagement',
+  eventLabel: 'clan_wingeon'
+}))
+
+listaDeBotoesClans[7].addEventListener('click', gtag('event', 'raibolt', {
+  eventCategory: 'engagement',
+  eventLabel: 'clan_raibolt'
+}))
+
+listaDeBotoesClans[8].addEventListener('click', gtag('event', 'psycraft', {
+  eventCategory: 'engagement',
+  eventLabel: 'clan_psycraft'
+}))
+
+listaDeBotoesClans[9].addEventListener('click', gtag('event', 'seavell', {
+  eventCategory: 'engagement',
+  eventLabel: 'clan_seavell'
 }))
