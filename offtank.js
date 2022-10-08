@@ -1,4 +1,4 @@
-for (let i = 0; i < 51; i++) {
+for (let i = 0; i < 102; i++) {
 let criacao = document.createElement("div");
 criacao.className = "cardsRoot";
 criacao.innerHTML = `<figure class="card">
@@ -633,7 +633,6 @@ const ListaDeOffTanks = [
   level: "100",
   tier: "2"
 },
-// ============= novos
 { 
   elemento: "inseto", 
   clan: "naturia ",
@@ -688,7 +687,7 @@ const ListaDeOffTanks = [
 },
 { 
   elemento: "dark", 
-  clan: " ",
+  clan: "malefic",
   cardFundo: fundoDark,
   icone: "./img/dark.png",
   icone2: "",
@@ -763,7 +762,725 @@ const ListaDeOffTanks = [
   funcao: "tank",
   level: "100",
   tier: "2"
-}
+},
+// NOVOS
+{ 
+  nome: "Sawk",
+  clan: "gardestrike ",
+  elemento: "lutador ", 
+  cardFundo: fundoLutador,
+  icone: "./img/lutador.png",
+  icone2: "",
+  cenario: cenarioLutador,
+  imagem: "./img/Sawk.gif",
+  funcao: "cde",
+  level: "100",
+  tier: "2"
+},
+
+{ 
+  nome: "Champion Primeape",
+  clan: "gardestrike ",
+  elemento: "lutador ", 
+  cardFundo: fundoLutador,
+  icone: "./img/lutador.png",
+  icone2: "",
+  cenario: cenarioLutador,
+  imagem: "./img/ChampionPrimeape.gif",
+  funcao: "cde",
+  level: "80",
+  tier: "3"
+},
+
+
+{ 
+  nome: "Sirfetch'd",
+  clan: "gardestrike ",
+  elemento: "lutador ", 
+  cardFundo: fundoLutador,
+  icone: "./img/lutador.png",
+  icone2: "",
+  cenario: cenarioLutador,
+  imagem: "./img/Sirfetch.gif",
+  funcao: "cde",
+  level: "80",
+  tier: "3"
+},
+
+{ 
+  nome: "Poliwrath",
+  clan: "gardestrike ",
+  elemento: "lutador ", 
+  cardFundo: fundoLutador,
+  icone: "./img/lutador.png",
+  icone2: "",
+  cenario: cenarioLutador,
+  imagem: "./img/Poliwrath.gif",
+  funcao: "cde",
+  level: "80",
+  tier: "3"
+},
+
+{ 
+  nome: "Lucario",
+  clan: "ironhard gardestrike",
+  elemento: "metal lutador", 
+  cardFundo: fundoMetal,
+  icone: "./img/metal.png",
+  icone2: "./img/lutador.png",
+  cenario: cenarioMetal,
+  imagem: "./img/Lucario.gif",
+  funcao: "cde",
+  level: "80",
+  tier: "3"
+},
+
+{ 
+  nome: "Shiny Lucario",
+  clan: "ironhard ",
+  elemento: "metal ", 
+  cardFundo: fundoMetal,
+  icone: "./img/metal.png",
+  icone2: "",
+  cenario: cenarioMetal,
+  imagem: "./img/ShinyLucario.gif",
+  funcao: "cde",
+  level: "100",
+  tier: "2"
+},
+
+{ 
+  nome: "Magneton",
+  clan: "ironhard raibolt",
+  elemento: "metal eletrico", 
+  cardFundo: fundoMetal,
+  icone: "./img/metal.png",
+  icone2: "./img/eletrico.png",
+  cenario: cenarioMetal,
+  imagem: "./img/Magneton.gif",
+  funcao: "cde",
+  level: "80",
+  tier: "3"
+},
+
+{ 
+  nome: "Klinklang",
+  clan: "ironhard ",
+  elemento: "metal ", 
+  cardFundo: fundoMetal,
+  icone: "./img/metal.png",
+  icone2: "",
+  cenario: cenarioMetal,
+  imagem: "./img/Klinklang.gif",
+  funcao: "cde",
+  level: "80",
+  tier: "3"
+},
+
+{ 
+  nome: "Bronzong",
+  clan: "ironhard psycraft",
+  elemento: "metal psiquico", 
+  cardFundo: fundoMetal,
+  icone: "./img/metal.png",
+  icone2: "./img/psiquico.png",
+  cenario: cenarioMetal,
+  imagem: "./img/Bronzong.gif",
+  funcao: "cde",
+  level: "80",
+  tier: "3"
+},
+
+{ 
+  nome: "Ampharos",
+  clan: "raibolt ",
+  elemento: "eletrico ", 
+  cardFundo: fundoEletrico,
+  icone: "./img/eletrico.png",
+  icone2: "",
+  cenario: cenarioEletrico,
+  imagem: "./img/Ampharos.gif",
+  funcao: "tank",
+  level: "80",
+  tier: "3"
+},
+
+{ 
+  nome: "Shiny Magby",
+  clan: "volcanic ",
+  elemento: "fogo ", 
+  cardFundo: fundoFogo,
+  icone: "./img/fogo.png",
+  icone2: "",
+  cenario: cenarioFogo,
+  imagem: "./img/ShinyMagby.gif",
+  funcao: "cde",
+  level: "100",
+  tier: "2"
+},
+
+{ 
+  nome: "Ninetales",
+  clan: "volcanic ",
+  elemento: "fogo ", 
+  cardFundo: fundoFogo,
+  icone: "./img/fogo.png",
+  icone2: "",
+  cenario: cenarioFogo,
+  imagem: "./img/Ninetales.gif",
+  funcao: "cde",
+  level: "80",
+  tier: "3"
+},
+
+{ 
+  nome: "Flareon",
+  clan: "volcanic ",
+  elemento: "fogo ", 
+  cardFundo: fundoFogo,
+  icone: "./img/fogo.png",
+  icone2: "",
+  cenario: cenarioFogo,
+  imagem: "./img/Flareon.gif",
+  funcao: "cde",
+  level: "80",
+  tier: "3"
+},
+
+{ 
+  nome: "Typhlosion",
+  clan: "volcanic ",
+  elemento: "fogo ", 
+  cardFundo: fundoFogo,
+  icone: "./img/fogo.png",
+  icone2: "",
+  cenario: cenarioFogo,
+  imagem: "./img/Typhlosion.gif",
+  funcao: "cde",
+  level: "80",
+  tier: "3"
+},
+
+{ 
+  nome: "Gyarados",
+  clan: "seavell wingeon",
+  elemento: "agua voador", 
+  cardFundo: fundoAgua,
+  icone: "./img/agua.png",
+  icone2: "./img/voador.png",
+  cenario: cenarioAgua,
+  imagem: "./img/Gyarados.gif",
+  funcao: "cde",
+  level: "100",
+  tier: "2"
+},
+
+{ 
+  nome: "Shiny Kingler",
+  clan: "seavell ",
+  elemento: "agua ", 
+  cardFundo: fundoAgua,
+  icone: "./img/agua.png",
+  icone2: "",
+  cenario: cenarioAgua,
+  imagem: "./img/ShinyKingler.gif",
+  funcao: "cde",
+  level: "100",
+  tier: "2"
+},
+
+{ 
+  nome: "Vaporeon",
+  clan: "seavell ",
+  elemento: "agua ", 
+  cardFundo: fundoAgua,
+  icone: "./img/agua.png",
+  icone2: "",
+  cenario: cenarioAgua,
+  imagem: "./img/Vaporeon.gif",
+  funcao: "cde",
+  level: "80",
+  tier: "3"
+},
+
+{ 
+  nome: "Feraligatr",
+  clan: "seavell ",
+  elemento: "agua ", 
+  cardFundo: fundoAgua,
+  icone: "./img/agua.png",
+  icone2: "",
+  cenario: cenarioAgua,
+  imagem: "./img/Feraligatr.gif",
+  funcao: "cde",
+  level: "80",
+  tier: "3"
+},
+
+{ 
+  nome: "Azumarill",
+  clan: "seavell psycraft",
+  elemento: "agua fada", 
+  cardFundo: fundoAgua,
+  icone: "./img/agua.png",
+  icone2: "./img/fada.png",
+  cenario: cenarioAgua,
+  imagem: "./img/Azumarill.gif",
+  funcao: "cde",
+  level: "80",
+  tier: "3"
+},
+
+{ 
+  nome: "Lapras",
+  clan: "seavell seavell",
+  elemento: "gelo agua", 
+  cardFundo: fundoGelo,
+  icone: "./img/gelo.png",
+  icone2: "./img/agua.png",
+  cenario: cenarioGelo,
+  imagem: "./img/Lapras.gif",
+  funcao: "cde",
+  level: "100",
+  tier: "2"
+},
+
+{ 
+  nome: "Abomasnow",
+  clan: "seavell naturia",
+  elemento: "gelo planta", 
+  cardFundo: fundoGelo,
+  icone: "./img/gelo.png",
+  icone2: "./img/planta.png",
+  cenario: cenarioGelo,
+  imagem: "./img/Abomasnow.gif",
+  funcao: "cde",
+  level: "100",
+  tier: "2"
+},
+
+{ 
+  nome: "Glalie",
+  clan: "seavell ",
+  elemento: "gelo ", 
+  cardFundo: fundoGelo,
+  icone: "./img/gelo.png",
+  icone2: "",
+  cenario: cenarioGelo,
+  imagem: "./img/Glalie.gif",
+  funcao: "cde",
+  level: "80",
+  tier: "3"
+},
+
+{ 
+  nome: "Glaceon",
+  clan: "seavell ",
+  elemento: "gelo ", 
+  cardFundo: fundoGelo,
+  icone: "./img/gelo.png",
+  icone2: "",
+  cenario: cenarioGelo,
+  imagem: "./img/Glaceon.gif",
+  funcao: "cde",
+  level: "80",
+  tier: "3"
+},
+
+{ 
+  nome: "Vanilluxe",
+  clan: "seavell ",
+  elemento: "gelo ", 
+  cardFundo: fundoGelo,
+  icone: "./img/gelo.png",
+  icone2: "",
+  cenario: cenarioGelo,
+  imagem: "./img/Vanilluxe.gif",
+  funcao: "cde",
+  level: "80",
+  tier: "3"
+},
+
+{ 
+  nome: "Shiny Delibird",
+  clan: "seavell wingeon",
+  elemento: "gelo voador", 
+  cardFundo: fundoGelo,
+  icone: "./img/gelo.png",
+  icone2: "./img/voador.png",
+  cenario: cenarioGelo,
+  imagem: "./img/ShinyDelibird.gif",
+  funcao: "cde",
+  level: "80",
+  tier: "3"
+},
+
+{ 
+  nome: "Rampardos",
+  clan: "orebound ",
+  elemento: "pedra ", 
+  cardFundo: fundoPedra,
+  icone: "./img/pedra.png",
+  icone2: "",
+  cenario: cenarioPedra,
+  imagem: "./img/Rampardos.gif",
+  funcao: "cde",
+  level: "100",
+  tier: "2"
+},
+
+{ 
+  nome: "Golem",
+  clan: "orebound orebound",
+  elemento: "pedra terra", 
+  cardFundo: fundoPedra,
+  icone: "./img/pedra.png",
+  icone2: "./img/terra.png",
+  cenario: cenarioPedra,
+  imagem: "./img/Golem.gif",
+  funcao: "cde",
+  level: "80",
+  tier: "3"
+},
+
+{ 
+  nome: "Solrock",
+  clan: "orebound ",
+  elemento: "pedra psy", 
+  cardFundo: fundoPedra,
+  icone: "./img/pedra.png",
+  icone2: "./img/psy.png",
+  cenario: cenarioPedra,
+  imagem: "./img/Solrock.gif",
+  funcao: "cde",
+  level: "80",
+  tier: "3"
+},
+
+{ 
+  nome: "Hippowdon",
+  clan: "orebound ",
+  elemento: "terra ", 
+  cardFundo: fundoTerra,
+  icone: "./img/terra.png",
+  icone2: "",
+  cenario: cenarioTerra,
+  imagem: "./img/Hippowdon.gif",
+  funcao: "cde",
+  level: "100",
+  tier: "2"
+},
+
+{ 
+  nome: "Shiny Donphan",
+  clan: "orebound ",
+  elemento: "terra ", 
+  cardFundo: fundoTerra,
+  icone: "./img/terra.png",
+  icone2: "",
+  cenario: cenarioTerra,
+  imagem: "./img/ShinyDonphan.gif",
+  funcao: "cde",
+  level: "100",
+  tier: "2"
+},
+
+{ 
+  nome: "Alolan Dugtrio",
+  clan: "orebound ironhard",
+  elemento: "terra metal", 
+  cardFundo: fundoTerra,
+  icone: "./img/terra.png",
+  icone2: "./img/metal.png",
+  cenario: cenarioTerra,
+  imagem: "./img/AlolanDugtrio.gif",
+  funcao: "cde",
+  level: "80",
+  tier: "3"
+},
+
+{ 
+  nome: "Nidoqueen",
+  clan: "orebound ",
+  elemento: "terra poison", 
+  cardFundo: fundoTerra,
+  icone: "./img/terra.png",
+  icone2: "./img/poison.png",
+  cenario: cenarioTerra,
+  imagem: "./img/Nidoqueen.gif",
+  funcao: "cde",
+  level: "80",
+  tier: "3"
+},
+
+{ 
+  nome: "Rhydon",
+  clan: "orebound orebound",
+  elemento: "terra pedra", 
+  cardFundo: fundoTerra,
+  icone: "./img/terra.png",
+  icone2: "./img/pedra.png",
+  cenario: cenarioTerra,
+  imagem: "./img/Rhydon.gif",
+  funcao: "cde",
+  level: "80",
+  tier: "3"
+},
+
+{ 
+  nome: "Shiny Noctowl",
+  clan: "wingeon gardestrike",
+  elemento: "voador normal", 
+  cardFundo: fundoVoador,
+  icone: "./img/voador.png",
+  icone2: "./img/normal.png",
+  cenario: cenarioVoador,
+  imagem: "./img/ShinyNoctowl.gif",
+  funcao: "cde",
+  level: "100",
+  tier: "2"
+},
+
+{ 
+  nome: "Crobat",
+  clan: "wingeon ",
+  elemento: "voador poison", 
+  cardFundo: fundoVoador,
+  icone: "./img/voador.png",
+  icone2: "./img/poison.png",
+  cenario: cenarioVoador,
+  imagem: "./img/Crobat.gif",
+  funcao: "cde",
+  level: "80",
+  tier: "3"
+},
+
+{ 
+  nome: "Staraptor",
+  clan: "wingeon gardestrike",
+  elemento: "voador normal", 
+  cardFundo: fundoVoador,
+  icone: "./img/voador.png",
+  icone2: "./img/normal.png",
+  cenario: cenarioVoador,
+  imagem: "./img/Staraptor.gif",
+  funcao: "cde",
+  level: "80",
+  tier: "3"
+},
+
+{ 
+  nome: "Togetic",
+  clan: "psycraft wingeon",
+  elemento: "fada voador", 
+  cardFundo: fundoFada,
+  icone: "./img/fada.png",
+  icone2: "./img/voador.png",
+  cenario: cenarioFada,
+  imagem: "./img/Togetic.gif",
+  funcao: "cde",
+  level: "80",
+  tier: "3"
+},
+
+{ 
+  nome: "Granbull",
+  clan: "psycraft ",
+  elemento: "fada ", 
+  cardFundo: fundoFada,
+  icone: "./img/fada.png",
+  icone2: "",
+  cenario: cenarioFada,
+  imagem: "./img/Granbull.gif",
+  funcao: "cde",
+  level: "80",
+  tier: "3"
+},
+
+{ 
+  nome: "Alolan Raichu",
+  clan: "psycraft raibolt",
+  elemento: "fada eletrico", 
+  cardFundo: fundoFada,
+  icone: "./img/fada.png",
+  icone2: "./img/eletrico.png",
+  cenario: cenarioFada,
+  imagem: "./img/AlolanRaichu.gif",
+  funcao: "cde",
+  level: "100",
+  tier: "2"
+},
+
+{ 
+  nome: "Espeon",
+  clan: "psycraft ",
+  elemento: "psiquico ", 
+  cardFundo: fundoPsiquico,
+  icone: "./img/psiquico.png",
+  icone2: "",
+  cenario: cenarioPsiquico,
+  imagem: "./img/Espeon.gif",
+  funcao: "cde",
+  level: "80",
+  tier: "3"
+},
+
+{ 
+  nome: "Mr. Mime",
+  clan: "psycraft ",
+  elemento: "psiquico ", 
+  cardFundo: fundoPsiquico,
+  icone: "./img/psiquico.png",
+  icone2: "",
+  cenario: cenarioPsiquico,
+  imagem: "./img/Mr.Mime.gif",
+  funcao: "cde",
+  level: "80",
+  tier: "3"
+},
+
+{ 
+  nome: "Xatu",
+  clan: "psycraft wingeon",
+  elemento: "psiquico voador", 
+  cardFundo: fundoPsiquico,
+  icone: "./img/psiquico.png",
+  icone2: "./img/voador.png",
+  cenario: cenarioPsiquico,
+  imagem: "./img/Xatu.gif",
+  funcao: "cde",
+  level: "80",
+  tier: "3"
+},
+
+{ 
+  nome: "Gengar",
+  clan: "malefic malefic",
+  elemento: "fantasma veneno", 
+  cardFundo: fundoFantasma,
+  icone: "./img/fantasma.png",
+  icone2: "./img/veneno.png",
+  cenario: cenarioFantasma,
+  imagem: "./img/Gengar.gif",
+  funcao: "cde",
+  level: "100",
+  tier: "2"
+},
+
+{ 
+  nome: "Banette",
+  clan: "malefic ",
+  elemento: "fantasma ", 
+  cardFundo: fundoFantasma,
+  icone: "./img/fantasma.png",
+  icone2: "",
+  cenario: cenarioFantasma,
+  imagem: "./img/Banette.gif",
+  funcao: "cde",
+  level: "80",
+  tier: "3"
+},
+
+{ 
+  nome: "Mimikyu",
+  clan: "malefic psycraft",
+  elemento: "fantasma fada", 
+  cardFundo: fundoFantasma,
+  icone: "./img/fantasma.png",
+  icone2: "./img/fada.png",
+  cenario: cenarioFantasma,
+  imagem: "./img/Mimikyu.gif",
+  funcao: "cde",
+  level: "100",
+  tier: "2"
+},
+
+{ 
+  nome: "Alolan Muk",
+  clan: "malefic ",
+  elemento: "veneno noturno", 
+  cardFundo: fundoVeneno,
+  icone: "./img/veneno.png",
+  icone2: "./img/noturno.png",
+  cenario: cenarioVeneno,
+  imagem: "./img/AlolanMuk.gif",
+  funcao: "cde",
+  level: "100",
+  tier: "2"
+},
+
+{ 
+  nome: "Seviper",
+  clan: "malefic ",
+  elemento: "veneno ", 
+  cardFundo: fundoVeneno,
+  icone: "./img/veneno.png",
+  icone2: "",
+  cenario: cenarioVeneno,
+  imagem: "./img/Seviper.gif",
+  funcao: "cde",
+  level: "100",
+  tier: "2"
+},
+
+{ 
+  nome: "Nidoking",
+  clan: "malefic orebound",
+  elemento: "veneno terra", 
+  cardFundo: fundoVeneno,
+  icone: "./img/veneno.png",
+  icone2: "./img/terra.png",
+  cenario: cenarioVeneno,
+  imagem: "./img/Nidoking.gif",
+  funcao: "cde",
+  level: "80",
+  tier: "3"
+},
+
+{ 
+  nome: "Muk",
+  clan: "malefic ",
+  elemento: "veneno ", 
+  cardFundo: fundoVeneno,
+  icone: "./img/veneno.png",
+  icone2: "",
+  cenario: cenarioVeneno,
+  imagem: "./img/Muk.gif",
+  funcao: "cde",
+  level: "80",
+  tier: "3"
+},
+
+{ 
+  nome: "Pyroar Female",
+  clan: "volcanic gardestrike",
+  elemento: "fogo normal", 
+  cardFundo: fundoFogo,
+  icone: "./img/fogo.png",
+  icone2: "./img/normal.png",
+  cenario: cenarioFogo,
+  imagem: "./img/PyroarFemale.gif",
+  funcao: "tank",
+  level: "100",
+  tier: "2"
+},
+
+{ 
+  nome: "Blastoise",
+  clan: "seavell ",
+  elemento: "agua ", 
+  cardFundo: fundoAgua,
+  icone: "./img/agua.png",
+  icone2: "",
+  cenario: cenarioAgua,
+  imagem: "./img/Blastoise.gif",
+  funcao: "tank",
+  level: "80",
+  tier: "3"
+},
+
+
+
 ];
 
 
@@ -928,4 +1645,10 @@ listaDeBotoesClans[9].addEventListener('click', ()=>{
     eventCategory: 'engagement',
     eventLabel: 'clan_seavell'
   })
+})
+
+const tituloo = document.querySelector('#tituloDoSite');
+
+tituloDoSite.addEventListener('click', ()=>{
+  console.log("Alguém me clicou")
 })
