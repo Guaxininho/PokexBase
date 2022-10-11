@@ -1652,3 +1652,5 @@ const tituloo = document.querySelector('#tituloDoSite');
 tituloDoSite.addEventListener('click', ()=>{
   console.log("Alguém me clicou")
 })
+
+// INICIO DOS FILTROS
